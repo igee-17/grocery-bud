@@ -39,7 +39,7 @@ function addItem(e) {
     createElement(id, value);
 
     // display alert
-    showAlert("item added succesfully", "success");
+    showAlert("item added", "success");
 
     // add to local storage
     addToLocalStorage(id, value);
@@ -92,7 +92,7 @@ function deleteItem(e) {
   if (list.children.length === 0) {
     container.classList.remove("show-container");
   }
-  showAlert("item removed successfully", "danger");
+  showAlert("item removed", "danger");
   setBackToDefault();
 
   // TO REMOVE FROM LOCAL STORAGE
