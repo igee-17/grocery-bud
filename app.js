@@ -111,6 +111,8 @@ function editItem(e) {
   submit.textContent = "edit";
   input.value = editElement.innerHTML;
   // setBackToDefault();
+  const attr = document.createAttribute("autofocus");
+  editElement.setAttributeNode(attr);
 }
 
 //  set back to default
